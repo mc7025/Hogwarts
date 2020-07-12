@@ -49,9 +49,10 @@ class TestCalc(object):
                              ids=get_data("test_data_div").keys())
     @pytest.mark.div
     def test_div(self, a, b, result):
-        if b == 0:
-            raise ZeroDivisionError
-        assert result == round(self.calc.div(a, b), 2)
+        try:
+            assert result == round(self.calc.div(a, b), 2)
+        except ZeroDivisionError as e:
+            print(f"除数为0，错误代码：{e}")
 
 
 if __name__ == '__main__':
