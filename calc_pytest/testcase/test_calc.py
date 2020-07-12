@@ -8,8 +8,8 @@ import calc_pytest.src.calculator as calc
 import yaml
 
 
-def get_data():
-    with open(os.path.join(BASE_PATH, "../testdata/datas.yml"), encoding='utf-8') as f:
+def get_data(filename=os.path.join(BASE_PATH, "../testdata/datas.yml")):
+    with open(filename, encoding='utf-8') as f:
         data = yaml.safe_load(f)
     return data
 
