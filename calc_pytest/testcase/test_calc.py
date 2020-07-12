@@ -8,10 +8,10 @@ import yaml
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 
-def get_data(filename=os.path.join(BASE_PATH, "../testdata/datas.yml")):
+def get_data(key, filename=os.path.join(BASE_PATH, "../testdata/datas.yml")):
     with open(filename, encoding='utf-8') as f:
         data = yaml.safe_load(f)
-    return data
+    return data.get(key)
 
 
 class TestCalc(object):
@@ -24,29 +24,29 @@ class TestCalc(object):
     #     (2, 2, 4),
     # ], ids=["test1", "test2", "test3"])
     @pytest.mark.parametrize("a, b , result",
-                             get_data().get("test_data_add"),
-                             ids=[f"add_case{x+1}" for x in range(len(get_data().get("test_data_add")))])
+                             get_data("test_data_add").values(),
+                             ids=get_data("test_data_add").keys())
     @pytest.mark.add
     def test_add(self, a, b, result):
         assert result == round(self.calc.add(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
-                             get_data().get("test_data_sub"),
-                             ids=[f"sub_case{x+1}" for x in range(len(get_data().get("test_data_sub")))])
+                             get_data("test_data_sub").values(),
+                             ids=get_data("test_data_sub").keys())
     @pytest.mark.sub
     def test_sub(self, a, b, result):
         assert result == round(self.calc.sub(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
-                             get_data().get("test_data_mul"),
-                             ids=[f"mul_case{x+1}" for x in range(len(get_data().get("test_data_mul")))])
+                             get_data("test_data_mul").values(),
+                             ids=get_data("test_data_mul").keys())
     @pytest.mark.mul
     def test_mul(self, a, b, result):
         assert result == round(self.calc.mul(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
-                             get_data().get("test_data_div"),
-                             ids=[f"div_case{x+1}" for x in range(len(get_data().get("test_data_div")))])
+                             get_data("test_data_div").values(),
+                             ids=get_data("test_data_div").keys())
     @pytest.mark.div
     def test_div(self, a, b, result):
         if b == 0:

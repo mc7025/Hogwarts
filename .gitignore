@@ -1,3 +1,6 @@
 /.idea/
 /venv/
 /calc_pytest/test/
+/src/__pycache__/
+/testcase/__pycache__/
+
