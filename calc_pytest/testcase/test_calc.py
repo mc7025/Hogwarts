@@ -14,32 +14,32 @@ class TestCalc(object):
     # ], ids=["test1", "test2", "test3"])
     @pytest.mark.parametrize("a, b , result",
                              yaml.safe_load(
-                                 open("../testdata/data_add.yml", encoding='utf-8')
-                             ))
+                                 open("../testdata/datas.yml", encoding='utf-8')
+                             ).get("test_data_add"))
     @pytest.mark.add
     def test_add(self, a, b, result):
         assert result == round(self.calc.add(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
                              yaml.safe_load(
-                                 open("../testdata/data_sub.yml", encoding='utf-8')
-                             ))
+                                 open("../testdata/datas.yml", encoding='utf-8')
+                             ).get("test_data_sub"))
     @pytest.mark.sub
     def test_sub(self, a, b, result):
         assert result == round(self.calc.sub(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
                              yaml.safe_load(
-                                 open("../testdata/data_mul.yml", encoding='utf-8')
-                             ))
+                                 open("../testdata/datas.yml", encoding='utf-8')
+                             ).get("test_data_mul"))
     @pytest.mark.mul
     def test_mul(self, a, b, result):
         assert result == round(self.calc.mul(a, b), 2)
 
     @pytest.mark.parametrize("a, b, result",
                              yaml.safe_load(
-                                 open("../testdata/data_div.yml", encoding='utf-8')
-                             ))
+                                 open("../testdata/datas.yml", encoding='utf-8')
+                             ).get("test_data_div"))
     @pytest.mark.div
     def test_div(self, a, b, result):
         if b == 0:
