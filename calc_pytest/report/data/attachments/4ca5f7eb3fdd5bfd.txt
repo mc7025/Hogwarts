@@ -1,4 +1,0 @@
-setup_class2， 只执行一次
-setup_method2, 每个测试方法都执行一次
-test_one, 测试用例
-teardown_method2， 每个测试方法都执行一次

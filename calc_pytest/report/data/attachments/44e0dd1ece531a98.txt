@@ -1,5 +1,0 @@
-setup_method2, 每个测试方法都执行一次
-test_tow, 测试用例
-teardown_method2， 每个测试方法都执行一次
-teardown_class2, 只执行一次
-teardown_module, 只执行一次，当有多个测试类的时候使用

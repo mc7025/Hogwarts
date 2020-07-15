@@ -1,3 +1,0 @@
-
- 登录用户： Jerry
-测试用例中 login 的返回值是： Jerry
