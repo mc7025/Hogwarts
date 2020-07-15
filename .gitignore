@@ -1,9 +1,9 @@
 /.idea/
 /venv/
 /calc_pytest/test/
+/calc_pytest/__pycache__/
 /calc_pytest/src/__pycache__/
 /calc_pytest/testcase/__pycache__/
-
-/calc_pytest/testcase/result/
 /calc_pytest/result/
 /calc_pytest/report/
+/calc_pytest/testcase/result/
