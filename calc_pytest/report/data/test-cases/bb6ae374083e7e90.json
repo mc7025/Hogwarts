@@ -1,0 +1,87 @@
+{
+  "uid" : "bb6ae374083e7e90",
+  "name" : "test_login[Tome]",
+  "fullName" : "test.test_param#test_login",
+  "historyId" : "f39c96c6bbcb2a19ec261b9215c2de9b",
+  "time" : {
+    "start" : 1594735269414,
+    "stop" : 1594735269414,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_r",
+    "time" : {
+      "start" : 1594735269413,
+      "stop" : 1594735269413,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e7088bc44c8b604",
+      "name" : "stdout",
+      "source" : "5e7088bc44c8b604.txt",
+      "type" : "text/plain",
+      "size" : 61
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_param"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-59UCKM6B"
+  }, {
+    "name" : "thread",
+    "value" : "20292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_param"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "login_r",
+    "value" : "'Tome'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bb6ae374083e7e90.json",
+  "parameterValues" : [ "'Tome'" ]
+}

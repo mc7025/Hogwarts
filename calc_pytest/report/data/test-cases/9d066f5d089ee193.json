@@ -1,0 +1,56 @@
+{
+  "uid" : "9d066f5d089ee193",
+  "name" : "test_one",
+  "fullName" : "test.test_add.TestClass#test_one",
+  "historyId" : "526bd753ae2b0cf8caec811fb70e9b97",
+  "time" : {
+    "start" : 1594735269265,
+    "stop" : 1594735269265,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-59UCKM6B"
+  }, {
+    "name" : "thread",
+    "value" : "20292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9d066f5d089ee193.json",
+  "parameterValues" : [ ]
+}

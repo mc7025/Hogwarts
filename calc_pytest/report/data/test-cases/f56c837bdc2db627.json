@@ -1,0 +1,80 @@
+{
+  "uid" : "f56c837bdc2db627",
+  "name" : "test_two",
+  "fullName" : "test.test_add.TestClass#test_two",
+  "historyId" : "d616cff219fcf593e7b4f6a93498e17f",
+  "time" : {
+    "start" : 1594735269268,
+    "stop" : 1594735269268,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = hasattr('hello', 'check')",
+  "statusTrace" : "self = <test_add.TestClass object at 0x000001EE8DF50630>\n\n    def test_two(self):\n        x = \"hello\"\n        print(x)\n>       assert hasattr(x, \"check\")\nE       AssertionError: assert False\nE        +  where False = hasattr('hello', 'check')\n\ntest\\test_add.py:19: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = hasattr('hello', 'check')",
+    "statusTrace" : "self = <test_add.TestClass object at 0x000001EE8DF50630>\n\n    def test_two(self):\n        x = \"hello\"\n        print(x)\n>       assert hasattr(x, \"check\")\nE       AssertionError: assert False\nE        +  where False = hasattr('hello', 'check')\n\ntest\\test_add.py:19: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d70db59489362758",
+      "name" : "stdout",
+      "source" : "d70db59489362758.txt",
+      "type" : "text/plain",
+      "size" : 6
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-59UCKM6B"
+  }, {
+    "name" : "thread",
+    "value" : "20292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f56c837bdc2db627.json",
+  "parameterValues" : [ ]
+}

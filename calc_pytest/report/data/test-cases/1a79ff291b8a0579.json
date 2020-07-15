@@ -1,0 +1,75 @@
+{
+  "uid" : "1a79ff291b8a0579",
+  "name" : "test_foo[1-2]",
+  "fullName" : "test.testdata.test_yaml#test_foo",
+  "historyId" : "b15e4d564b1146fb837007cdc7321ae1",
+  "time" : {
+    "start" : 1594735269497,
+    "stop" : 1594735269497,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a9832faeb9459a7a",
+      "name" : "stdout",
+      "source" : "a9832faeb9459a7a.txt",
+      "type" : "text/plain",
+      "size" : 10
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.testdata"
+  }, {
+    "name" : "suite",
+    "value" : "test_yaml"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-59UCKM6B"
+  }, {
+    "name" : "thread",
+    "value" : "20292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.testdata.test_yaml"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "1"
+  }, {
+    "name" : "b",
+    "value" : "2"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a79ff291b8a0579.json",
+  "parameterValues" : [ "1", "2" ]
+}

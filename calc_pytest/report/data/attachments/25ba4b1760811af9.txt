@@ -1,0 +1,4 @@
+setup_method1, 每个测试方法都执行一次
+test_four, 测试用例
+teardown_method1, 每个测试方法都执行一次
+teardown_class1, 只执行一次
